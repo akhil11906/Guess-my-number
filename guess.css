@@ -12,7 +12,7 @@ body {
 .container {
     margin-top: 50px;
     font-size: 30px;
-    text-align: center; /* Center content for smaller screens */
+
 }
 
 .again {
@@ -21,7 +21,6 @@ body {
     padding: 10px 30px 10px 30px;
     font-family: 'Press Start 2P', system-ui;
     display: block;
-    margin: 20px auto; /* Center button on smaller screens */
 }
 
 .container_wrap {
@@ -78,7 +77,6 @@ hr {
     position: absolute;
     top: 37%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Center element */
     text-align: center;
 }
 
