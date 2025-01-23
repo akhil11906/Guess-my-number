@@ -26,14 +26,14 @@ body {
 .container_wrap {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+   
 }
 
 .guess {
     display: flex;
     justify-content: center;
     margin: 40px 0 100px;
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+   
 }
 
 .check {
@@ -48,7 +48,7 @@ body {
     justify-content: space-around;
     margin: 50px 20px;
     font-size: 25px;
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  
 }
 
 .text {
@@ -58,7 +58,7 @@ body {
     padding: 20px;
     width: 130px;
     margin-bottom: 10px;
-    text-align: center; /* Center text for smaller screens */
+    
 }
 
 hr {
