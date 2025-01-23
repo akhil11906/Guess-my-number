@@ -1,54 +1,68 @@
-*{
+* {
     margin: 0;
     box-sizing: border-box;
     color: white;
 }
-body{
+
+body {
     background-color: black;
     font-family: 'Press Start 2P', system-ui;
 }
-.container{
+
+.container {
     margin-top: 50px;
     font-size: 30px;
+    text-align: center; /* Center content for smaller screens */
 }
-.again{
+
+.again {
     font-size: 30px;
     color: black;
     padding: 10px 30px 10px 30px;
     font-family: 'Press Start 2P', system-ui;
+    display: block;
+    margin: 20px auto; /* Center button on smaller screens */
 }
-.container_wrap{
+
+.container_wrap {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
-.guess{
+
+.guess {
     display: flex;
-    justify-content: center ;
-    margin-top: 40px;
-    margin-bottom: 100px;
+    justify-content: center;
+    margin: 40px 0 100px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
-.check{
+
+.check {
     display: block;
     color: black;
     font-size: 20px;
     font-family: 'Press Start 2P', system-ui;
 }
-.contain{
+
+.contain {
     display: flex;
     justify-content: space-around;
-    margin-top: 170px;
+    margin: 50px 20px;
     font-size: 25px;
-    margin-left: 200px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
-.text{
+
+.text {
     font-family: 'Press Start 2P', system-ui;
     font-size: 30px;
     color: black;
-   padding: 20px;
-   width: 130px;
-   margin-bottom: 10px;
+    padding: 20px;
+    width: 130px;
+    margin-bottom: 10px;
+    text-align: center; /* Center text for smaller screens */
 }
-hr{
+
+hr {
     padding: 5px;
     background-color: white;
     margin-top: 130px;
@@ -63,6 +77,79 @@ hr{
     font-size: 70px;
     position: absolute;
     top: 37%;
-    left: 45%; 
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center element */
+    text-align: center;
 }
 
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        font-size: 20px;
+    }
+
+    .again {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+
+    .container_wrap {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .guess {
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .contain {
+        flex-direction: column;
+        font-size: 20px;
+        margin-left: 0;
+    }
+
+    .text {
+        font-size: 20px;
+        padding: 15px;
+        width: 100px;
+    }
+
+    .hide {
+        font-size: 40px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        font-size: 16px;
+    }
+
+    .again {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .guess {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .contain {
+        font-size: 18px;
+    }
+
+    .text {
+        font-size: 16px;
+        padding: 10px;
+        width: 90px;
+    }
+
+    .hide {
+        font-size: 30px;
+        padding: 8px;
+    }
+}
